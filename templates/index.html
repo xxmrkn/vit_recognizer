@@ -12,6 +12,15 @@
             <input type="file" name="img_file" accept="image/*">
             <button id="upload_btn" type="button">upload</button>
         </form>
+            {% if img_url %}
+        <p>
+            <img id="uld_img" src="{{img_url}}">
+        </p>
+        <button type="button" id="recog_button">Image Recognition</button>
+        <form id="recog_form">
+            <input type="hidden" name="img_path">
+        </form>
+        {% endif %}
     </body>
     <script>
         $(function(){
@@ -22,6 +31,14 @@
                 $("#ul_form").attr("action", "{{url_for('upload')}}");
                 $("#ul_form").attr("enctype", "multipart/form-data");
                 $("#ul_form").submit();
+            })
+
+            $("#recog_button").on("click", function(){
+                $("input [name='img_path']").val($("#uld_img").attr("src"));
+                $("#recog_form").attr("target", "_self");
+                $("#recog_form").attr("method", "post");
+                $("#recog_form").attr("action", "{{url_for('recognition')}}");
+                $("#recog_form").submit();
             })
         });
     </script>
