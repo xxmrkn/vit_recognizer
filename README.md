@@ -15,5 +15,4 @@ Image Recognition Web Application using Pretrained VisionTransformer
 └── 📄 vit.ipynb  
 ```
 
-##Demo
 ![demo](https://user-images.githubusercontent.com/67511304/191502738-41f06c15-a837-41be-8004-bd5bc219bf0a.gif)
