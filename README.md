@@ -1,2 +1,17 @@
 # vit_recognizer
-VisionTransformerを使った画像認識Webアプリケーション
+Image Recognition Web Application using Pretrained VisionTransformer
+
+## Composition
+```
+.  
+├── 📁 static  
+│   ├── 📄 sample_image01.jpg  
+│   ├── 📄 sample_image02.jpg  
+│   └── 📄 sample_image03.jpg    
+├── 📁 templates  
+│   └── 📄 index.html 
+├── 📄 app.py
+├── 📄 labels_map.txt
+└── 📄 vit.ipynb  
+```
+![demo](https://raw.github.com/wiki/takuyama29/WorldTracking/images/Untitled.gif)
