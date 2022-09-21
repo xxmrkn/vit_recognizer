@@ -21,11 +21,13 @@
             <input type="hidden" name="img_path">
         </form>
         {% endif %}
+        {% if pred_label %}
+        <h1>{{pred_label}}</h1>
+        {% endif %}
     </body>
     <script>
         $(function(){
             $("#upload_btn").on("click", function(){
-                // process when the upload button is pushed
                 $("#ul_form").attr("target", "_self");
                 $("#ul_form").attr("method", "post");
                 $("#ul_form").attr("action", "{{url_for('upload')}}");
@@ -34,7 +36,7 @@
             })
 
             $("#recog_button").on("click", function(){
-                $("input [name='img_path']").val($("#uld_img").attr("src"));
+                $("input[name='img_path']").val($("#uld_img").attr("src"));
                 $("#recog_form").attr("target", "_self");
                 $("#recog_form").attr("method", "post");
                 $("#recog_form").attr("action", "{{url_for('recognition')}}");
