@@ -14,4 +14,6 @@ Image Recognition Web Application using Pretrained VisionTransformer
 ├── 📄 labels_map.txt
 └── 📄 vit.ipynb  
 ```
-![demo](https://raw.github.com/wiki/xxmrkn/vit_recognizer/images/demo.gif)
+
+##Demo
+![demo](https://user-images.githubusercontent.com/67511304/191502738-41f06c15-a837-41be-8004-bd5bc219bf0a.gif)
