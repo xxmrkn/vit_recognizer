@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Step1 Flask</title>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+                integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+                crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <form id="ul_form">
+            <input type="file" name="img_file" accept="image/*">
+            <button id="upload_btn" type="button">upload</button>
+        </form>
+    </body>
+    <script>
+        $(function(){
+            $("#upload_btn").on("click", function(){
+                // process when the upload button is pushed
+                $("#ul_form").attr("target", "_self");
+                $("#ul_form").attr("method", "post");
+                $("#ul_form").attr("action", "{{url_for('upload')}}");
+                $("#ul_form").attr("enctype", "multipart/form-data");
+                $("#ul_form").submit();
+            })
+        });
+    </script>
+</html>
