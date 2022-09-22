@@ -1,6 +1,14 @@
 # vit_recognizer
 Image Recognition Web Application using Pretrained VisionTransformer
 
+## Demo
+
+<div align="center">
+
+![demo](https://user-images.githubusercontent.com/67511304/191505911-a147adfe-645a-417e-a513-debc4d1d7fd2.gif)
+
+</div>
+
 ## Composition
 ```
 .  
@@ -14,10 +22,4 @@ Image Recognition Web Application using Pretrained VisionTransformer
 ├── 📄 labels_map.txt
 └── 📄 vit.ipynb  
 ```
-## Demo
 
-<div align="center">
-
-![demo](https://user-images.githubusercontent.com/67511304/191505911-a147adfe-645a-417e-a513-debc4d1d7fd2.gif)
-
-</div>
