@@ -20,9 +20,9 @@ def index():
 @app.route('/upload', methods=['post'])
 def upload():
     img_file = request.files['img_file']
-    print(img_file.filename)
+    #print(img_file.filename)
     filename = secure_filename(img_file.filename)
-    print(filename)
+    #print(filename)
     ul_path = f'./static/{filename}'
     #img_file.save(ul_path)
     return render_template('index.html', img_url=ul_path)
