@@ -64,4 +64,4 @@ wcwidth==0.2.5
 webencodings==0.5.1
 #Werkzeug @ file:///opt/conda/conda-bld/werkzeug_1645628268370/work
 widgetsnbextension==4.0.3
-python==3.10.4
+#python==3.10.4
