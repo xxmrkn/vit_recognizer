@@ -24,7 +24,7 @@ def upload():
     filename = secure_filename(img_file.filename)
     print(filename)
     ul_path = f'./static/{filename}'
-    img_file.save(ul_path)
+    #img_file.save(ul_path)
     return render_template('index.html', img_url=ul_path)
 
 @app.route('/recognition', methods=['post'])
